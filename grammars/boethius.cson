@@ -1,0 +1,83 @@
+'scopeName': 'source.boethius'
+'name': 'Boethius'
+'fileTypes': ['bth']
+'patterns': [
+    {
+        'match': '\\;.*'
+        'name': 'comment.line.boethius'
+    },
+    {
+        'match': '\\|'
+        'name': 'keyword.other.boethius'
+    },
+    {
+        'match': '\\('
+        'name': 'LPAREN'
+    },
+    {
+        'match': '\\)'
+        'name': 'RPAREN'
+    },
+    {
+        'match': '\\<'
+        'name': 'OPENBRKT'
+    },
+    {
+        'match': '\\>'
+        'name': 'CLOSEBRKT'
+    },
+    {
+        'match': '\\/'
+        'name': 'FWDSLASH'
+    },
+    {
+        'match': '\\='
+        'name': 'keyword.operator.boethius'
+    },
+    {
+        'match': '[0-9]+'
+        'comment': 'integer'
+        'name': 'constant.numeric.boethius'
+    }
+    {
+        'match': '\\s([a-gA-G][b|#]{0,2})([0-9]*)'
+        'captures': {
+            '1': {
+                'name': 'variable.language.boethius'
+            },
+            '2': {
+                'name': 'variable.language.boethius'
+            }
+        },
+        'name': 'meta.pitchclass.boethius'
+    },
+    {
+        'match': '\\~[a-zA-Z][a-zA-Z0-9]*'
+        'comment': 'variable'
+        'name': 'storage.type.boethius'
+    },
+    {
+        'match': '\\sr'
+        'comment': "rest"
+        'name': 'constant.language.boethius'
+    },
+    {
+        'match': '\\.+'
+        'comment': 'dots'
+        'name': 'keyword.operator.boethius'
+    },
+    {
+        'match': 'true|false'
+        'comment': 'boolean'
+        'name': 'constant.language.boethius'
+    },
+    {
+        'match': 'csym'
+        'comment': 'chord symbol'
+        'name': 'keyword.other.boethius'
+    },
+    {
+        'match': '[a-zA-Z][a-zA-Z0-9]*'
+        'name': 'string.unquoted.boethius'
+    }
+]
