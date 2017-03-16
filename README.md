@@ -1,3 +1,3 @@
 # language-boethius package
 
-Syntax highlighting for the Boethius music programming language.
+Atom syntax highlighting for the Boethius music programming language.

@@ -40,7 +40,7 @@
         'name': 'constant.numeric.boethius'
     }
     {
-        'match': '\\s([a-gA-G][b|#]{0,2})([0-9]*)'
+        'match': '(?<![a-zA-Z0-9])([a-gA-G][b|#]{0,2})([0-9]*)(?![a-zA-Z])'
         'captures': {
             '1': {
                 'name': 'variable.language.boethius'
@@ -57,7 +57,7 @@
         'name': 'storage.type.boethius'
     },
     {
-        'match': '\\sr'
+        'match': '(?<![a-zA-Z0-9])r(?![a-zA-Z0-9])'
         'comment': "rest"
         'name': 'constant.language.boethius'
     },
