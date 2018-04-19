@@ -52,7 +52,7 @@
         'name': 'meta.pitchclass.boethius'
     },
     {
-        'match': '\\~[a-zA-Z][a-zA-Z0-9]*'
+        'match': '\\~[a-zA-Z][a-zA-Z0-9\\-]*'
         'comment': 'variable'
         'name': 'storage.type.boethius'
     },
