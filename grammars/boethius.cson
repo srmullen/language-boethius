@@ -7,6 +7,13 @@
         'name': 'comment.line.boethius'
     },
     {
+        name:  "comment.block.boethius"
+        begin: "/\\*"
+        end:   "\\*/"
+        beginCaptures: 0: name: "punctuation.definition.comment.begin.boethius"
+        endCaptures:   0: name: "punctuation.definition.comment.end.boethius"
+    }
+    {
         'match': '\\|'
         'name': 'keyword.other.boethius'
     },
